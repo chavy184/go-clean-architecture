@@ -1,0 +1,15 @@
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+vendor/
+node_modules/
+dist/
+build/
+.env
+.idea/
+.vscode/
+.DS_Store

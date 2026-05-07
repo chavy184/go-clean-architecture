@@ -1,0 +1,17 @@
+// 作用：gRPC 的 .proto 定义文件示例
+syntax = "proto3";
+
+package pb;
+option go_package = "go-clean-architecture/api/protobuf;pb";
+
+service UserService {
+  rpc GetUser (GetUserRequest) returns (GetUserResponse);
+}
+
+message GetUserRequest {
+  string id = 1;
+}
+
+message GetUserResponse {
+  string username = 1;
+}

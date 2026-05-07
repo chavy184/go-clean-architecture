@@ -1,0 +1,12 @@
+# 作用：Kubernetes 部署清单示例文件
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-clean-architecture-backend
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: app
+        image: my-registry/go-clean-architecture-backend:latest

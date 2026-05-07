@@ -1,0 +1,19 @@
+env: "dev"
+
+postgres:
+  dsn: "host=localhost user=postgres password=postgres dbname=demo port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+  max_idle_conns: 10
+  max_open_conns: 100
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: ""
+  db: 0
+
+logger:
+  level: "debug"
+  filename: "logs/app.log"
+  max_size: 50         # 单个文件最大限制 (MB)
+  max_backups: 5       # 最多保留 5 个备份
+  max_age: 30          # 最多保留 30 天
+  compress: true       # 开启 gzip 压缩
